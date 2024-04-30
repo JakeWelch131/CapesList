@@ -152,14 +152,24 @@ function CreateComicForm({comicData}) {
         <ComicHeader>ADD COMIC</ComicHeader>
         </ComicDiv>
             <ComicDiv>
-              <ComicInput placeholder="Name" type="text" required></ComicInput>
+              <ComicInput placeholder="Price" type="text" value={comicData.price} required></ComicInput>
             </ComicDiv>
             <ComicDiv>
-              <ComicInput placeholder="Price" type="text" required></ComicInput>
+              <ComicInput placeholder="Date Added" type="text" value={comicData.date_added} required></ComicInput>
             </ComicDiv>
             <ComicDiv>
-              <ComicInput placeholder="Release Date" type="text" required></ComicInput>
+              <ComicInput placeholder="Release Date" type="text" value={comicData.release_date} required></ComicInput>
             </ComicDiv>
+            <ComicDiv>
+              <ComicInput placeholder="Title" type="text" value={comicData.title} required></ComicInput>
+            </ComicDiv>
+            <ComicDiv>
+              <ComicInput placeholder="Issue Number" type="text" value={comicData.issue_number} required></ComicInput>
+            </ComicDiv>
+            <ComicDiv>
+              <ComicInput placeholder="Cover URL" type="text" value={comicData.front_cover_photo_url} required></ComicInput>
+            </ComicDiv>
+            
             <ComicDiv>
                 <ComicSelect defaultValue="Author" required>
                   <option value="" disabled selected>Author</option>
